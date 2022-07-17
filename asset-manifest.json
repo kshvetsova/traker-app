@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/traker-app/static/css/main.ac595d26.css",
+    "main.js": "/traker-app/static/js/main.e0651402.js",
+    "index.html": "/traker-app/index.html",
+    "static/media/start.svg": "/traker-app/static/media/start.c2de920819b409fe9e98.svg",
+    "static/media/remove.svg": "/traker-app/static/media/remove.7c23aa9bb930fd0d03ba.svg",
+    "static/media/stop.svg": "/traker-app/static/media/stop.87051d418bc15c27ca31.svg",
+    "main.ac595d26.css.map": "/traker-app/static/css/main.ac595d26.css.map",
+    "main.e0651402.js.map": "/traker-app/static/js/main.e0651402.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac595d26.css",
+    "static/js/main.e0651402.js"
+  ]
+}
