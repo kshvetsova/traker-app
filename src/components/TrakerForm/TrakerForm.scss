@@ -1,0 +1,47 @@
+.TrakerForm {
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+  border: 2px solid #9f9f9f;
+  border-radius: 40px;
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 30px;
+
+  &-Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: #3eb06c;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      background:#1ecd64;
+      transform: scale(1.2);
+    }
+  }
+
+  &-Input {
+    flex-grow: 1;
+    border-radius: 40px;
+    margin-right: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+
+    &::placeholder {
+      color: #c7c7c7;
+    }
+
+    &:focus {
+      background: rgba(62, 176, 108, 0.2);
+
+      &::placeholder {
+        color: #fff;
+      }
+    }
+  }
+}
