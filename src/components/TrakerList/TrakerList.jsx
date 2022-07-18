@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { getTrakers, deleteTraker, getTrakerId,getCurrentTraker,
-  updateTraker, setTimerActive, setOpenTraker} from '../../store';
+import { getTrakers, deleteTraker, getTrakerId, getCurrentTraker,
+  updateTraker, setTrakerActive, setOpenTraker} from '../../store';
 import { getMoment, setTimer } from '../../helpers/moment';
 import moment from 'moment'
 import classNames from 'classnames';
@@ -65,7 +65,7 @@ export const TrakerList = () => {
               className={classNames("TrakerList-Button button", {
                 button_active: trakerId !== id,
               })}
-              onClick={() => dispatch(setTimerActive(id))}
+              onClick={() => dispatch(setTrakerActive(id))}
             >{}</button>
             <button
               className="TrakerList-ButtonDelete button"
