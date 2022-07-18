@@ -3,15 +3,16 @@ import { configureStore } from '@reduxjs/toolkit';
 const ADD_TRAKER = 'ADD_TRAKER';
 const DELETE_TRAKER = 'DELETE_TRAKER';
 const UPDATE_TRAKER = 'UPDATE_TIMER';
-const TRAKER_ID = 'TRAKER_ID';
-const TIMER_ACTIVE = 'TIMER_ACTIVE';
 const OPEN_TRAKER = 'OPEN_TRAKER';
+const TRAKER_ID = 'TRAKER_ID';
+const TRAKER_ACTIVE = 'TRAKER_ACTIVE';
+
 
 export const addTraker = (item) => ({ type: ADD_TRAKER, item });
 export const deleteTraker = (id) => ({ type: DELETE_TRAKER, id });
 export const updateTraker = (id, time) => ({ type: UPDATE_TRAKER, id, time })
 export const setTrakerId = (id) => ({ type: TRAKER_ID, id});
-export const setTimerActive = (id) => ({ type: TIMER_ACTIVE, id });
+export const setTrakerActive = (id) => ({ type: TRAKER_ACTIVE, id });
 export const setOpenTraker = (id, time) => ({ type: OPEN_TRAKER, id, time });
 
 export const getTrakers = ({ trakers }) => trakers;
@@ -58,7 +59,7 @@ const reducer = (state = initialState, action) => {
         ...state,
         trakerId: action.id,
       }
-    case TIMER_ACTIVE:
+    case TRAKER_ACTIVE:
       return {
         ...state,
         trakerId: state.trakerId !== action.id ? action.id : '',
