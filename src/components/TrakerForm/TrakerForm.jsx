@@ -43,10 +43,7 @@ export const TrakerForm = () => {
         placeholder="Enter traker name"
       />
       <button type="submit" className="TrakerForm-Button">
-        <img
-          src="images/caret-right.svg"
-          alt="caret-right"
-        />
+        <img src="images/caret-right.svg" alt="caret-right"/>
       </button>
     </form>
   )
